@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0px;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    animation: 1s menuanimation ease;
+}
+header{
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color:#197278;
+    background-image: url(FundoTeste3.gif);
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 3px 3px 3px #115b6167;
+}
+header h1{
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+}
+header h1:hover{
+    transition: 1s;
+    color: #ce8147;
+    cursor:pointer;
+}
+.Menu{
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.Menu a{
+    padding: 5px 30px;
+    font-size: 1.5em;
+    color: white;
+    transition: 1s;
+}
+.Menu a:hover{
+    transition: 1s;
+    background-color: #1972783f;
+}
+main{
+    transition: 2s;
+    width: 70%;
+    min-width: 700px;
+    margin: 0px 25px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.148);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .top-button{
+    font-size: 2em;
+    color: white;
+    padding: 0px 20px 5px 20px;
+    border-radius: 0px 0px 30px 30px;
+    background-image: url(FundoTeste3.gif);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+    animation: 10s menualterade ease-in-out infinite;
+}
+main .top-button:hover{
+    color: #197278;
+    cursor: pointer;
+}
+main img{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.148);
+    opacity: 0.9;
+    width: 650px;
+    height: 450px;
+    border-radius: 33px;
+}
+main .titulo-publicacao{
+    margin-top: 20px;
+}
+main .legenda-publicacao{
+    width: 650px;
+}
+main .About{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+main .About-img{
+    width: 49%;
+    margin-left: 2%;
+}
+main .About-img p{
+    text-align: center;
+    color: rgb(126, 126, 126);
+    width: 100%;
+    font-style: italic;
+}
+main .About-text{
+    width: 49%;
+}
+main .About-img img{
+    width: 600px;
+    height: 400px;
+}
+
+
+
+@keyframes menuanimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes menualterade {
+    0%{
+        margin: 0px;
+    }
+    25%{
+        margin-left: 700px;
+    }
+    75%{
+        margin-right: 700px;
+    }
+}
+@media (max-width: 1800px)
+{
+    .About{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main .About-img{
+        width: 100%;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .About-text{
+        width: 100%;
+        text-align: center;
+    }
+}
+/*box-shadow: 0em 0em 0.7em rgba(0, 0, 0, 0.148);*/
